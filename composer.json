@@ -18,7 +18,7 @@
         }
     ],
     "require": {
-        "ldaptools/ldaptools-php8": "dev-master",
+        "itseasy/ldaptools": "dev-master",
         "symfony/framework-bundle": "~3.0|~4.0|~5.0"
     },
     "require-dev": {
@@ -42,7 +42,7 @@
         {
             "type": "git",
             "url": "https://github.com/martinberlin/ldaptools-php8.git",
-            "name": "ldaptools/ldaptools-php8"
+            "name": "itseasy/ldaptools"
         }
     ],
  "minimum-stability":"dev"
