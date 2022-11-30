@@ -44,6 +44,5 @@
             "url": "https://github.com/martinberlin/ldaptools-php8.git",
             "name": "ldaptools/ldaptools-php8"
         }
-    ],
- "minimum-stability":"dev"
+    ]
 }
