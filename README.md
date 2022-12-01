@@ -3,6 +3,38 @@
 
 The LdapToolsBundle provides easy integration of LDAP for Symfony via [LdapTools](https://github.com/ldaptools/ldaptools).
 
+### About this fork
+
+This was upgraded so it's possible to use Symfony 5.4 in my time working for [www.skygate.de](https://www.skygate.de)
+
+Please use also package [ldaptools-php8](https://github.com/martinberlin/ldaptools-php8) in it's latest **^1** release.
+Remember that composer does allow external repositories **ONLY** in the root *composer.json* other composers fetched from Vendors are not allowed to use this (Or it would be a chaos that might suck the universe into a black hole)
+Just as an example if you would like to use both of this packages into your composer.json
+
+```json
+{
+"require" : {
+        "ldaptools/ldaptools" : "^1",
+        "ldaptools/ldaptools-bundle": "dev-master"
+        }
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/martinberlin/ldaptools-bundle-symfony-5.git",
+            "name": "ldaptools/ldaptools-bundle"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/martinberlin/ldaptools-php8.git",
+            "name": "ldaptools/ldaptools"
+        }
+    ],
+    "minimum-stability": "stable"
+}
+```
+
+It's important to notice that to meet that min. stability referenced packages should have **a valid release Tag** otherwise you need to use dev-branch and that is never a good idea. Since it won't work with min. stability:stable. Do not ever turn this to dev for any production application!
+
 * An [LDAP authentication provider](/Resources/doc/LDAP-Authentication-Provider.md), including AdvancedUserInterface support.
 * An [LDAP form type](/Resources/doc/LDAP-Object-Form-Type.md) to easily use LDAP objects in forms.
 * An LDAP type for Doctrine to easily store and retrieve LDAP results in a Doctrine entity.
