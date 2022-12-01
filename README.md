@@ -9,13 +9,13 @@ This was upgraded so it's possible to use Symfony 5.4 in my time working for [ww
 
 Please use also package [ldaptools-php8](https://github.com/martinberlin/ldaptools-php8) in it's latest **^1** release.
 Remember that composer does allow external repositories **ONLY** in the root *composer.json* other composers fetched from Vendors are not allowed to use this (Or it would be a chaos that might suck the universe into a black hole)
-Just as an example if you would like to use both of this packages into your composer.json
+Just as an example if you would like to use both of this packages into your composer.json with Symfony 5.4 and PHP 8:
 
 ```json
 {
 "require" : {
         "ldaptools/ldaptools" : "^1",
-        "ldaptools/ldaptools-bundle": "dev-master"
+        "ldaptools/ldaptools-bundle": "^1"
         }
     "repositories": [
         {
@@ -32,6 +32,8 @@ Just as an example if you would like to use both of this packages into your comp
     "minimum-stability": "stable"
 }
 ```
+
+**Please fix the ldaptools-bundle to 1.0 to use PHP 7.4. The Tag 1.0.1 will work only with PHP 8.0 / 8.1**
 
 It's important to notice that to meet that min. stability referenced packages should have **a valid release Tag** otherwise you need to use dev-branch and that is never a good idea. Since it won't work with min. stability:stable. Do not ever turn this to dev for any production application!
 
