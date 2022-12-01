@@ -19,7 +19,7 @@
         }
     ],
     "require": {
-        "ldaptools/ldaptools": "dev-master",
+        "ldaptools/ldaptools": "^1",
         "symfony/framework-bundle": "~3.0|~4.0|~5.0"
     },
     "require-dev": {
@@ -42,7 +42,7 @@
     "repositories": [
         {
             "type": "git",
-            "url": "https://github.com/wiryonolau/ldaptools.git",
+            "url": "https://github.com/martinberlin/ldaptools-php8.git",
             "name": "ldaptools/ldaptools"
         }
     ]
