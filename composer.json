@@ -1,6 +1,7 @@
 {
     "name": "ldaptools/ldaptools-bundle",
     "type": "symfony-bundle",
+    "minimum-stability": "dev",
     "description": "Provides easy LDAP integration for Symfony via LdapTools. Test to make this compatible with ^5 DO NOT use in production",
     "keywords": [
         "LDAP",
