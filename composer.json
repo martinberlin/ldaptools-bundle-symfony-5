@@ -19,7 +19,7 @@
         }
     ],
     "require": {
-        "itseasy/ldaptools": "dev-master",
+        "ldaptools/ldaptools": "dev-master",
         "symfony/framework-bundle": "~3.0|~4.0|~5.0"
     },
     "require-dev": {
@@ -38,5 +38,12 @@
     },
     "autoload": {
         "psr-4": {"LdapTools\\Bundle\\LdapToolsBundle\\": ""}
-    }
+    },
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/wiryonolau/ldaptools.git",
+            "name": "ldaptools/ldaptools"
+        }
+    ]
 }
