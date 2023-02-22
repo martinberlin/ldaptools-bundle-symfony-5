@@ -34,17 +34,17 @@ class LdapUser extends LdapObject implements LdapUserInterface, UserInterface, \
     /**
      * {@inheritdoc}
      */
-    public function getSalt()
+    public function getSalt() : string
     {
-        return null;
+        return "";
     }
 
     /**
      * {@inheritdoc}
      */
-    public function getPassword()
+    public function getPassword() : string
     {
-        return null;
+        return "";
     }
 
     /**
@@ -58,7 +58,7 @@ class LdapUser extends LdapObject implements LdapUserInterface, UserInterface, \
     /**
      * {@inheritdoc}
      */
-    public function getRoles()
+    public function getRoles() : array
     {
         return $this->roles;
     }
@@ -107,7 +107,7 @@ class LdapUser extends LdapObject implements LdapUserInterface, UserInterface, \
     /**
      * {@inheritdoc}
      */
-    public function getUsername()
+    public function getUsername() : string
     {
         return $this->get('username');
     }
