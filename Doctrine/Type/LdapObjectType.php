@@ -23,8 +23,9 @@ class LdapObjectType extends TextType
 
     /**
      * @inheritdoc
+     * @return string
      */
-    public function getName()
+    public function getName() : string
     {
         return self::TYPE;
     }
